@@ -24,7 +24,7 @@ import com.materialkolor.dynamiccolor.ColorSpec
 import com.materialkolor.rememberDynamicColorScheme
 import com.materialkolor.score.Score
 
-val DefaultThemeColor = Color(0xFFED5564)
+val DefaultThemeColor = Color(0xFFFF375F)
 
 @Composable
 fun echomusicTheme(
@@ -35,7 +35,7 @@ fun echomusicTheme(
 ) {
     val context = LocalContext.current
     
-    val useSystemDynamicColor = (themeColor == DefaultThemeColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S)
+    val useSystemDynamicColor = false
 
     
     val baseColorScheme = if (useSystemDynamicColor) {

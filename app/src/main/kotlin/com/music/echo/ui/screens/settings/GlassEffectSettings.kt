@@ -70,19 +70,19 @@ fun GlassEffectSettings(
     scrollBehavior: TopAppBarScrollBehavior,
 ) {
     val (globalEnabled, onGlobalEnabledChange) = rememberPreference(
-        LiquidGlassGlobalEnabledKey, defaultValue = false
+        LiquidGlassGlobalEnabledKey, defaultValue = true
     )
     val (vibrancy, onVibrancyChange) = rememberPreference(
         LiquidGlassVibrancyKey, defaultValue = 1f
     )
     val (blurRadius, onBlurRadiusChange) = rememberPreference(
-        LiquidGlassBlurRadiusKey, defaultValue = 8f
+        LiquidGlassBlurRadiusKey, defaultValue = 12f
     )
     val (lensHeight, onLensHeightChange) = rememberPreference(
-        LiquidGlassLensHeightKey, defaultValue = 0.5f
+        LiquidGlassLensHeightKey, defaultValue = 0.55f
     )
     val (lensAmount, onLensAmountChange) = rememberPreference(
-        LiquidGlassLensAmountKey, defaultValue = 0.5f
+        LiquidGlassLensAmountKey, defaultValue = 0.55f
     )
     val (chromaticAberration, onChromaticAberrationChange) = rememberPreference(
         LiquidGlassChromaticAberrationKey, defaultValue = true
@@ -106,7 +106,7 @@ fun GlassEffectSettings(
         Color(surfaceTintColorInt)
     }
     val (surfaceOpacity, onSurfaceOpacityChange) = rememberPreference(
-        LiquidGlassSurfaceOpacityKey, defaultValue = 0.4f
+        LiquidGlassSurfaceOpacityKey, defaultValue = 0.32f
     )
     val (textColorInt, onTextColorChange) = rememberPreference(
         LiquidGlassTextColorKey, defaultValue = 0
